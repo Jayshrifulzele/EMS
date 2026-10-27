@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    @apply min-h-screen bg-slate-950 font-sans text-slate-100 antialiased;
+    background-image:
+      radial-gradient(ellipse 60% 40% at 15% -10%, rgba(16, 185, 129, 0.16), transparent),
+      radial-gradient(ellipse 50% 40% at 100% 0%, rgba(56, 189, 248, 0.1), transparent);
+    background-attachment: fixed;
+  }
+  select option {
+    @apply bg-slate-900 text-slate-100;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur;
+  }
+  .field {
+    @apply w-full rounded-lg border border-white/10 bg-slate-900/60 px-3 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-emerald-400/70 focus:ring-2 focus:ring-emerald-400/20;
+  }
+  .label {
+    @apply mb-1.5 block text-xs font-medium uppercase tracking-wide text-slate-400;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-emerald-500 text-slate-950 hover:bg-emerald-400;
+  }
+  .btn-ghost {
+    @apply btn border border-white/10 bg-white/5 text-slate-200 hover:bg-white/10;
+  }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+.rise { animation: rise 0.35s ease both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise { animation: none; }
+}
