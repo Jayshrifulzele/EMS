@@ -1,21 +1,76 @@
-# EMS - Employee Management System
+# 🚀 Employee Task Management Dashboard
 
-A React + Vite + Tailwind app where an admin assigns tasks and employees accept, finish or fail them.
-Data is saved in the browser (localStorage), so there is no backend.
+A modern, dark-themed task management dashboard built to help administrators assign tasks to employees, track progress, and manage task statuses through a clean and intuitive interface.
 
-## Run
+## ✨ Features
 
-    npm install
-    npm run dev
+- 📊 Dashboard with task status statistics
+- ➕ Create and assign tasks to employees
+- 📝 Add task titles and descriptions
+- 📅 Set task due dates
+- 🏷️ Categorize tasks
+- 🔄 Track task statuses: New, In Progress, Completed, and Failed
+- 🔍 Filter tasks by employee and status
+- 🗑️ Delete tasks
+- 🌙 Modern dark-themed user interface
 
-## Demo logins (password: 123)
+## 🛠️ Tech Stack
 
-- Admin: admin@me.com
-- Employee: e@e.com (Arjun), employee2@example.com (Sneha), employee3@example.com ...
+- React.js
+- JavaScript
+- Tailwind CSS
+- Vite
 
-## Features
+## 📸 Dashboard Preview
 
-- Login with error message, session kept after refresh, log out
-- Employee: stat cards (click to filter), task cards with Accept / Done / Failed / Reopen
-- Admin: totals, create task (choose employee), all tasks table with filters and delete
-- "Reset demo data" button at the bottom of the admin page
+The dashboard provides an overview of task statistics, task creation, employee assignments, and task tracking in one place.
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone YOUR_GITHUB_REPOSITORY_URL
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd EMS
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## 🎯 Project Objective
+
+This project demonstrates frontend development skills, dashboard design, form handling, task management, and filtering data in a React application.
+
+## 👩‍💻 Author
+
+**Jayshri Fulzele**
+
+- GitHub: [Jayshri Fulzele](https://github.com/jayshrifulzele)
+- LinkedIn: Add your LinkedIn profile URL
+
+---
+
+⭐ Built as a project to practice and showcase frontend development skills.
